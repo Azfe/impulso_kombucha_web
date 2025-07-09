@@ -18,6 +18,12 @@
     --gradient-teVerde: linear-gradient(#78ffb1, #c0fdd5);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lunchtype21', sans-serif;
     font-size: large;

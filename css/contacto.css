@@ -1,34 +1,21 @@
-:root {
-  --frutos-rojos: #E23A4D;
-  --pina-colada: #00B7E6;
-  --te-verde: #50C878;
-  --texto: #1A3E2B;
-  --limon: #FFE32B;
-  --background-color: #FFF3E6;
-  --gradient-pinaColada: linear-gradient(#b9f1f8, #fff5c3);
-  --gradient-frutosRojos: linear-gradient(#ffacc8, #ffe3e3);
-  --gradient-jengibre: linear-gradient(#fff966, #fceabb);
-  --gradient-teVerde: linear-gradient(#78ffb1, #c0fdd5);
-}
-
-body {
-  font-family: 'Lunchtype21', sans-serif;
-  font-size: large;
-  margin: 0;
-}
-
 /* CARDS INFO COMPANY */
 
 .company-info {
-  max-width: 1200px;
+  display: flex;
+  max-width: 100%;
   margin: 0 auto;
   padding: 40px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--te-verde);
 }
 
 .company-info h1 {
+  font-family: 'Chimfly', sans-serif;
   text-align: center;
   color: var(--texto);
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-size: 2.5em;
 }
 
@@ -37,6 +24,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
   margin-top: 30px;
+  max-width: 700px;
 }
 
 .info-card {
@@ -54,7 +42,7 @@ body {
 }
 
 .info-card h2 {
-  color: var(--frutos-rojos);
+  color: var(--texto);
   font-size: 1.4em;
   margin-bottom: 15px;
   display: flex;
@@ -63,7 +51,7 @@ body {
 }
 
 .info-card p {
-  color: #666;
+  color: var(--texto);
   line-height: 1.6;
   font-size: 1em;
 }
@@ -148,17 +136,17 @@ body {
 }
 
 /* Company Info */
-.company-info {
-  max-width: 700px;
+.company-info {    
   margin: 0 auto;
   font-size: 1rem;
   text-align: center;
   line-height: 1.6;
+  width: 100vw;
 }
 
 .company-info h2 {
   margin-top: 2rem;
-  color: #3a3e1a;
+  /* color: #3a3e1a; */
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -284,7 +272,7 @@ body {
   }
 
   .company-info h2 {
-    font-size: 1.2rem;
+    font-size: 1.2rem;    
   }
 
 }
