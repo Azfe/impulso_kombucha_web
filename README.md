@@ -50,6 +50,7 @@ Open a browser with the localhost field indicated.
 
 <code><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" width="30"></code>
 <code><img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="CSS3" width="30"></code>
+<code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="Javascript logo"></code>
 
 ### Tools 🛠️
 
