@@ -8,40 +8,442 @@
   <meta name="description" content="Sitio web de la marca Impulso" />
   <meta name="keywords" content="HTML, CSS" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Titulo -->
+  <!-- Título -->
   <title>Impulso | Kombucha</title>
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="images/logo.PNG" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- FONTS -->
+  <!-- Lunchtype21 Font -->
+  <link href="https://fonts.cdnfonts.com/css/lunchtype21" rel="stylesheet">
+  <!-- Kaushan Script Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE ICONS -->
+  <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_up"
+    />
+
   <!-- CSS -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
   <!-- Header -->
-  <!-- Barra de navegacion -->
+  <header class="main-header">
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light impulso-navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <img src="images/pinya.png" alt="Piña fresca" class="img-pinya">
+          <ul class="navbar-nav w-100 flex-lg-row flex-column">
+            <!-- Left-aligned links -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Formatos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sabores.html">Sabores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="somossalud.html">Somos Salud</a>
+            </li>
+
+            <li class="nav-item ms-lg-auto">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <img src="images/pinya.png" alt="Piña fresca" class="img-pinya-2">
+        </div>
+      </div>
+      <div class="impulso-logo-container">
+        <img src="images/logo.png" alt="Impulso Logo" class="impulso-logo">
+      </div>
+    </nav>
+  </header>
+
+  <main>
 
 
-  <!-- Hero Section  -->
-  
 
-  <!-- Section info -->
-  <section id="section-info">
 
-  </section>
+    <!-- Hero Section  -->
+    <section id="hero-section">
+      <div class="hero-cta">
+        <h1 class="hero-title">¡Refresca tu verano!</h1>
+        <button class="btn-cta">Descubre nuestros sabores</button>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
+    <!-- SECCIO FORMATOS -->
+    <main>
+      <section class="formatos-container">
+        <div class="titulosFormato-container">
+          <h3 id="bestSeller" class="tituloActivo">Best Sellers</h3>
+          <h3 id="botellaPeque">250ML</h3>
+          <h3 id="botellaGrande">750ML</h3>
+          <h3 id="botellaShot">SHOTS</h3>
+        </div>
+        <!-- SELECCION BEST SELLERS -->
+        <div id="seleccion-bestSellers" class="tarjetaContainer seccion-botellas">
+          <!-- TARJETA 1 -->
+          <div class="tarjetaFormato packBebidas">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/pack_de_seis_personalizado.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>6 unidades a un precio especial</span>
+                <h5 class="txtPina">PACK 6 BOTELLAS PERSONALIZADO</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonPina">Seleccionar</a>
+          </div>
+          <!-- TARJETA 2 -->
+          <div class="tarjetaFormato packBebidas">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/multisabor.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>¡3 unidades al precio de 2!</span>
+                <h5 class="txtPina">¡3x2 A TU GUSTO!</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonPina">Seleccionar</a>
+          </div>
+          <!-- TARJETA 3 -->
+          <div class="tarjetaFormato saborFrutos">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <div class="contenedorImagen">
+                  <img src="images/bebida750.webp" ..." />
+                </div>
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>Botella de 750ml</span>
+                <h5 class="txtFrutos">BEBIDAS XXL</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonFrutos">Seleccionar</a>
+          </div>
+          <!-- TARJETA 4 -->
+          <div class="tarjetaFormato packBebidas">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/shots.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>Para un boost de energía</span>
+                <h5 class="txtPina">MINI SHOTS</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonPina">Seleccionar</a>
+          </div>
+        </div>
+        <!-- SELECCION 250ML -->
+        <div id="seleccion-botellaPeque" class="tarjetaContainer seccion-botellas">
+          <!-- TARJETA 1 -->
+          <div class="tarjetaFormato saborPina">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/250/1000x1000px_pina-colada.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>
+                  🌴Exótico y refrescante, con sabor a piña dulce y un toque
+                  cremoso de coco.</span>
+                <h5 class="txtPina">PIÑA COLADA</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonPina">Seleccionar</a>
+          </div>
+          <!-- TARJETA 2 -->
+          <div class="tarjetaFormato saborFrutos">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/250/Frutos_rojos_V3.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🍓 Intenso y afrutado, con mezcla vibrante de fresas,
+                  arándanos y frambuesas.</span>
+                <h5 class="txtFrutos">FRUTOS ROJOS</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonFrutos">Seleccionar</a>
+          </div>
+          <!-- TARJETA 3 -->
+          <div class="tarjetaFormato saborTe">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <div class="contenedorImagen">
+                  <img src="images/250/teverde.webp" />
+                </div>
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🍃 Suave y equilibrado, con el sabor puro y natural del té
+                  verde fermentado.</span>
+                <h5 class="txtTe">TÉ VERDE</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonTe">Seleccionar</a>
+          </div>
+          <!-- TARJETA 4 -->
+          <div class="tarjetaFormato saborJengi">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/250/jengibre_limon.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🍋 Energizante y picante, perfecta fusión de cítrico y
+                  especiado.</span>
+                <h5 class="txtLimon">JENGIBRE LIMÓN</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonJengi">Seleccionar</a>
+          </div>
+        </div>
+        <!-- SELECCION 750ML -->
+        <div id="seleccion-botellaGrande" class="tarjetaContainer seccion-botellas">
+          <!-- TARJETA 1 -->
+          <div class="tarjetaFormato packBebidas">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/750/kit.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🛒 Haz un 6x5 en bebidas grandes</span>
+                <h5 class="txtPina">PACK DE 6 SABORES</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonPina">Seleccionar</a>
+          </div>
+          <!-- TARJETA 2 -->
+          <div class="tarjetaFormato saborFrutos">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/750/frutos-rojos-750.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🍓 Intenso y afrutado, con mezcla vibrante de fresas,
+                  arándanos y frambuesas.</span>
+                <h5 class="txtFrutos">FRUTOS ROJOS XXL</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonFrutos">Seleccionar</a>
+          </div>
+          <!-- TARJETA 3 -->
+          <div class="tarjetaFormato saborTe">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <div class="contenedorImagen">
+                  <img src="images/750/TE-VERDE-PRODUCT-CARD_250ML.webp" />
+                </div>
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🍃 Suave y equilibrado, con el sabor puro y natural del té
+                  verde fermentado.</span>
+                <h5 class="txtTe">TÉ VERDE XXL</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonTe">Seleccionar</a>
+          </div>
+          <!-- TARJETA 4 -->
+          <div class="tarjetaFormato saborJengi">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/750/jengi.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🍋 Energizante y picante, perfecta fusión de cítrico y
+                  especiado.</span>
+                <h5 class="txtLimon">JENGIBRE LIMÓN XXL</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonJengi">Seleccionar</a>
+          </div>
+        </div>
+        <!-- SELECCION SHOTS -->
+        <div id="seleccion-shots" class="tarjetaContainer seccion-botellas">
+          <!-- TARJETA 1 -->
+          <div class="tarjetaFormato packBebidas">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/shot/PRODUCT-CARD_TRES_SHOT-v2_1.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🛒 Haz un 3x2 en shots</span>
+                <h5 class="txtPina">MiniPack</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonPina">Seleccionar</a>
+          </div>
+          <!-- TARJETA 2 -->
+          <div class="tarjetaFormato saborJengi">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/shot/JENGIBRE-Y-LIMON-PRODUCT-CARD_SHOT-V2.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🍋 Energizante y picante, perfecta fusión de cítrico y
+                  especiado.</span>
+                <h5 class="txtLimon">GINGER SHOT</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonJengi">Seleccionar</a>
+          </div>
+          <!-- TARJETA 3 -->
+          <div class="tarjetaFormato saborFrutos">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <div class="contenedorImagen">
+                  <img src="images/shot/ZANAHORIA-Y-CURCUMA-PRODUCT-CARD_SHOT.webp" />
+                </div>
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🥕 Dulce y terroso, con un toque natural que sorprende por su
+                  suavidad.</span>
+                <h5 class="txtFrutos">CARROT SHOT</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonFrutos">Seleccionar</a>
+          </div>
+          <!-- TARJETA 4 -->
+          <div class="tarjetaFormato saborTe">
+            <div class="tarjetaHeader">
+              <div class="contenedorImagen">
+                <img src="images/shot/KIWI-PRODUCT-CARD_SHOT.webp" alt="..." />
+              </div>
+              <div class="tarjetaHeader-body">
+                <span>🥝 Ácido y refrescante, con el sabor tropical del kiwi en su
+                  punto justo.</span>
+                <h5 class="txtTe">KIWI SHOT</h5>
+              </div>
+            </div>
+            <a href="#" class="botonTarjeta botonTe">Seleccionar</a>
+          </div>
+        </div>
+      </section>
 
-  </footer>
+      <!-- Section info -->
+      <section id="section-info">
+        <article class="article-info-home">
+          <h3 class="article-title">FABRICACIÓN</h3>
+          <div class="article-content">
+            <p class="article-content-text">
+              En Impulso elaboramos kombucha de forma artesanal, cuidando cada paso del proceso.
+              La fermentación se realiza de manera natural durante varios días, en un entorno controlado.
+              Utilizamos ingredientes de calidad, sin aditivos ni pasteurización, para conservar sus propiedades.
+              Cada botella es envasada a mano, con atención al detalle y respeto por el producto.
+              Así nace nuestra kombucha: viva, refrescante y hecha con dedicación en España.
+            </p>
+            <img src="images/imgfabricacion.jpg" alt="fabricación kombucha" class="img-article-info">
+          </div>
+        </article>
+        <article class="article-info-home">
+          <h3 class="article-title">Beneficios</h3>
+          <div class="article-content">
+            <ul class="article-content-text">
+              <li>Mejorar la digestión: Favorece el equilibrio de la microbiota intestinal y la absorción de nutrientes.
+              </li>
+              <li>Fortalecer el sistema inmunológico: Estimula la producción de células defensoras del organismo.</li>
+              <li>Desintoxicar el cuerpo: Ayuda a eliminar toxinas y productos de desecho.</li>
+              <li>Proteger el hígado: Promueve la función hepática y la desintoxicación del hígado.</li>
+              <li>Aumentar la energía: Contribuye a reducir la fatiga y aumentar los niveles de energía.</li>
+            </ul>
+            <img src="images/imgbeneficios.webp" alt="Imagen de beneficios" class="img-article-info">
+          </div>
+        </article>
+        <article class="article-info-home">
+          <h3 class="article-title">Historia</h3>
+          <div class="article-content">
+            <p class="article-content-text">
+              La kombucha es una bebida fermentada de té que tiene una historia milenaria, originándose en China hace
+              más
+              de 2.000 años. Se le atribuían propiedades energizantes y de longevidad, y era conocida como "el elixir de
+              la
+              vida" o "el té de la inmortalidad". Su consumo se extendió desde China hacia Rusia, Japón, Corea y otros
+              países asiáticos y europeos, ganando popularidad en Occidente en tiempos más recientes.</p>
+            <img src="images/imghistoria.jpg" alt="Imagen historia" class="img-article-info">
+          </div>
+        </article>
+      </section>
+      <!-- SEPARATOR BTN UP -->
+      <div class="separator-btn-up">
+        <button type="button" class="botonSubir" id="botonSubir">
+          <span class="material-symbols-outlined">
+            keyboard_double_arrow_up
+          </span>
+        </button>
+      </div>
+      <!-- <div class="separator-btn-svg">
+        <button type="button" class="boton-svg" id="botonSvg">
+            <svg width="32" height="32" viewBox="0 0 88 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.8" cx="44" cy="43.5" r="43.5" fill="#FF0000"/>
+                <path d="M42.7727 28.1818H45.2273V31.5909H42.7727V28.1818ZM25.3182 53.8182L39.3636 24.3636H48.6364L62.6818 53.8182H54.6364L43.5909 30.2273H44.4091L33.5 53.8182H25.3182Z" fill="white"/>
+            </svg>
+        </button>
+    </div> -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+      <div class="container-fluid px-4">
+        <div class="row align-items-center text-center text-lg-start justify-content-between">
+
+          <!-- Left: Logo & Address -->
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="d-flex flex-row align-items-center align-items-lg-center gap-4">
+              <img src="images/logo.png" alt="Impulso Logo" class="footer-logo mb-2">
+              <div class="footer-address">
+                <strong>Impulso®</strong><br>
+                Dirección línea 1<br>
+                Línea 2
+              </div>
+            </div>
+          </div>
+
+          <!-- Center: Icons + Plantas -->
+          <div class="col-lg-4 mb-4 mb-lg-0 d-flex flex-column align-items-center plants-social">
+            <div class="d-flex align-items-center justify-content-between gap-5 mb-3">
+              <img src="images/hoja-te-verde.png" class="footer-plant" alt="Plant">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <img src="images/hoja-te-verde.png" class="footer-plant" alt="Plant">
+            </div>
+          </div>
+
+          <!-- Right: Institutional Logos -->
+          <div class="col-lg-4 d-flex flex-row align-items-center align-items-lg-end justify-content-evenly">
+            <img src="images/catalunya.png" alt="Catalunya" class="inst-logo mb-2">
+            <img src="images/EUflag.png" alt="EU" class="inst-logo mb-2">
+            <img src="images/vegan-logo.png" alt="Eco" class="inst-logo">
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/formats.js"></script>
+    <script src="js/btn-up.js"></script>
 </body>
 
 </html>
