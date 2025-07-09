@@ -1,5 +1,9 @@
 /* CARDS INFO COMPANY */
 
+main {
+  margin-top: 180px;
+}
+
 .company-info {
   display: flex;
   max-width: 100%;
