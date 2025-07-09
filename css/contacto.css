@@ -1,383 +1,290 @@
-    :root {
-      --frutos-rojos: #E23A4D;
-      --pina-colada: #00B7E6;
-      --te-verde: #50C878;
-      --texto: #1A3E2B;
-      --limon: #FFE32B;
-      --background-color: #FFF3E6;
-      --gradient-pinaColada: linear-gradient(#b9f1f8, #fff5c3);
-      --gradient-frutosRojos: linear-gradient(#ffacc8, #ffe3e3);
-      --gradient-jengibre: linear-gradient(#fff966, #fceabb);
-      --gradient-teVerde: linear-gradient(#78ffb1, #c0fdd5);
-    }
+:root {
+  --frutos-rojos: #E23A4D;
+  --pina-colada: #00B7E6;
+  --te-verde: #50C878;
+  --texto: #1A3E2B;
+  --limon: #FFE32B;
+  --background-color: #FFF3E6;
+  --gradient-pinaColada: linear-gradient(#b9f1f8, #fff5c3);
+  --gradient-frutosRojos: linear-gradient(#ffacc8, #ffe3e3);
+  --gradient-jengibre: linear-gradient(#fff966, #fceabb);
+  --gradient-teVerde: linear-gradient(#78ffb1, #c0fdd5);
+}
 
-    body {
-      font-family: 'Lunchtype21', sans-serif;
-      font-size: large;
-      margin: 0;
-    }
+body {
+  font-family: 'Lunchtype21', sans-serif;
+  font-size: large;
+  margin: 0;
+}
 
-    .impulso-navbar {
-      background: linear-gradient(to right, #00A6D1, #78E3FF);
-      position: relative;
-      padding: 40px 10px 40px 10px;
-      align-items: center;
-      justify-content: center;
-    }
+/* CARDS INFO COMPANY */
 
-    .impulso-logo-container {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      ;
-      z-index: 10;
-    }
+.company-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
-    .impulso-logo {
-      height: 150px;
-      border-radius: 50%;
-      background-color: #fff;
-    }
+.company-info h1 {
+  text-align: center;
+  color: var(--texto);
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
 
-    .img-pinya {
-      height: 70px;
-    }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
 
-    .img-pinya-2 {
-      height: 70px;
-      transform: scaleX(-1);
-    }
+.info-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--frutos-rojos);
+}
 
-    .navbar-nav {
-      width: 100%;
-      justify-content: space-between;
-    }
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
 
-    .navbar-nav .nav-item {
-      margin: 0 10px;
-    }
+.info-card h2 {
+  color: var(--frutos-rojos);
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-    .navbar-nav .nav-link {
-      color: white;
-      font-style: normal;
-    }
+.info-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1em;
+}
 
-    .navbar-nav .nav-link:hover {
-      font-weight: bolder;
-      color: white;
-      transform: scale(1.15);
-      transition: transform 0.3s ease;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    }
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--frutos-rojos);
+}
 
-    .navbar-nav .nav-link.active {
-      font-weight: bolder;
-      color: white;
-      transform: scale(1.15);
-      transition: transform 0.3s ease;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-    }
+/* Responsive */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
 
-    /* CARDS INFO COMPANY */
+  .company-info h1 {
+    font-size: 2em;
+  }
+}
 
-    .company-info {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
+/*Contacto*/
 
-    .company-info h1 {
-      text-align: center;
-      color: var(--texto);
-      margin-bottom: 40px;
-      font-size: 2.5em;
-    }
+.title-contact {
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #1A3E2B;
+  padding-top: 100px;
+}
 
-    .cards-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-    }
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
 
-    .info-card {
-      background: white;
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-left: 4px solid var(--frutos-rojos);
-    }
+.contact-form .form-label {
+  font-weight: bold;
+  color: #1A3E2B;
+}
 
-    .info-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-    }
+.contact-form .form-control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 
-    .info-card h2 {
-      color: var(--frutos-rojos);
-      font-size: 1.4em;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+.contact-form .btn-primary {
+  background-color: #1A3E2B;
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+}
 
-    .info-card p {
-      color: #666;
-      line-height: 1.6;
-      font-size: 1em;
-    }
+.contact-form .btn-primary {
+  background: linear-gradient(135deg, #2e6f4d, #52b4cf);
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+}
 
-    .icon {
-      width: 24px;
-      height: 24px;
-      fill: var(--frutos-rojos);
-    }
+.contact-form .btn-primary:hover {
+  background: linear-gradient(135deg, #52b4cf, #2e6f4d);
+}
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .cards-container {
-        grid-template-columns: 1fr;
-      }
+.contact-form .btn-primary:active {
+  background: linear-gradient(135deg, #52b4cf, #2e6f4d);
+  transform: scale(0.95);
+}
 
-      .company-info h1 {
-        font-size: 2em;
-      }
-    }
+/* Divider Logo */
+.logo-divider {
+  display: block;
+  margin: 3rem auto;
+  width: 120px;
+  border-radius: 50%;
+}
 
-    /*Footer*/
-    .footer-section {
-      padding: 10px;
-      background: linear-gradient(to bottom, #98f7b2, #3ad084);
-      color: black;
-      font-size: 1rem;
-    }
+/* Company Info */
+.company-info {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+}
 
-    .footer-logo {
-      width: 100px;
-      border-radius: 50%;
-    }
+.company-info h2 {
+  margin-top: 2rem;
+  color: #3a3e1a;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
-    .footer-address {
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: left;
+  }
 
-    .footer-plant {
-      height: 60px;
-    }
+  .formatos-sabores-salud {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+  }
 
-    .inst-logo {
-      height: 30px;
-    }
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+  }
 
-    i {
-      color: #1A3E2B;
-      font-size: larger;
-    }
+  .contacto-lick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+  }
 
-    /*Contacto*/
+  .img-pinya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 10vw;
+  }
 
-    .title-contact {
-      font-family: 'Kaushan Script', cursive;
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 2.5rem;
-      color: #1A3E2B;
-      padding-top: 100px;
-    }
+  .img-pinya-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 10vw;
+  }
 
-    /* Contact Form */
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto 3rem auto;
-      padding: 2rem;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    }
+  /*footer section*/
+  .footer-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #1A3E2B;
+    padding: 2rem 1rem;
+  }
 
-    .contact-form .form-label {
-      font-weight: bold;
-      color: #1A3E2B;
-    }
+  .footer-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .contact-form .form-control {
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
+  .footer-section .col-lg-4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
-    .contact-form .btn-primary {
-      background-color: #1A3E2B;
-      border: none;
-      font-weight: bold;
-      padding: 0.5rem 1.5rem;
-    }
+  /* Stack logo and address vertically */
+  .footer-section .col-lg-4>.d-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
 
-    .contact-form .btn-primary {
-      background: linear-gradient(135deg, #2e6f4d, #52b4cf);
-      border: none;
-      font-weight: bold;
-      padding: 0.5rem 1.5rem;
-    }
+  .plants-social {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
 
-    .contact-form .btn-primary:hover {
-      background: linear-gradient(135deg, #52b4cf, #2e6f4d);
-    }
+  /* inner row with icons and plants */
+  .plants-social>.d-flex {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 1.5rem !important;
+  }
 
-    .contact-form .btn-primary:active {
-      background: linear-gradient(135deg, #52b4cf, #2e6f4d);
-      transform: scale(0.95);
-    }
+  /* Optional: shrink icons on mobile */
+  .plants-social i {
+    font-size: 1.4rem;
+  }
 
-    /* Divider Logo */
-    .logo-divider {
-      display: block;
-      margin: 3rem auto;
-      width: 120px;
-      border-radius: 50%;
-    }
+  .footer-address {
+    text-align: center;
+  }
 
-    /* Company Info */
-    .company-info {
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1rem;
-      text-align: center;
-      line-height: 1.6;
-    }
+  .footer-logo,
+  .footer-plant,
+  .inst-logo {
+    margin-bottom: 8px;
+    justify-content: center !important;
+  }
 
-    .company-info h2 {
-      margin-top: 2rem;
-      color: #3a3e1a;
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
+  .row>div {
+    margin-bottom: 1.5rem;
+  }
 
-    @media (max-width: 992px) {
-      .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: left;
-      }
+  /*Contato */
 
-      .formatos-sabores-salud {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 100%;
-      }
+  .contact-form {
+    padding: 1.5rem;
+  }
 
-      .contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 100%;
-      }
+  h1 {
+    font-size: 2rem;
+  }
 
-      .contacto-lick {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 100%;
-      }
+  .company-info h2 {
+    font-size: 1.2rem;
+  }
 
-      .img-pinya {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 10vw;
-      }
-
-      .img-pinya-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 10vw;
-      }
-
-      /*footer section*/
-      .footer-section {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        color: #1A3E2B;
-        padding: 2rem 1rem;
-      }
-
-      .footer-section .row {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .footer-section .col-lg-4 {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-
-      /* Stack logo and address vertically */
-      .footer-section .col-lg-4>.d-flex {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-      }
-
-      .plants-social {
-        display: flex;
-        flex-direction: row !important;
-        justify-content: center !important;
-      }
-
-      /* inner row with icons and plants */
-      .plants-social>.d-flex {
-        flex-direction: row !important;
-        flex-wrap: wrap;
-        justify-content: center !important;
-        gap: 1.5rem !important;
-      }
-
-      /* Optional: shrink icons on mobile */
-      .plants-social i {
-        font-size: 1.4rem;
-      }
-
-      .footer-address {
-        text-align: center;
-      }
-
-      .footer-logo,
-      .footer-plant,
-      .inst-logo {
-        margin-bottom: 8px;
-        justify-content: center !important;
-      }
-
-      .row>div {
-        margin-bottom: 1.5rem;
-      }
-
-      /*Contato */
-
-      .contact-form {
-        padding: 1.5rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      .company-info h2 {
-        font-size: 1.2rem;
-      }
-
-    }
+}

@@ -1,0 +1,31 @@
+/* FOOTER */
+
+.footer-section {
+    padding: 10px;
+    background: linear-gradient(to bottom, #98f7b2, #3ad084);
+    color: black;
+    font-size: 1rem;
+}
+
+.footer-logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.footer-address {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-plant {
+    height: 60px;
+}
+
+.inst-logo {
+    height: 30px;
+}
+
+i {
+    color: var(--texto);
+    font-size: larger;
+}

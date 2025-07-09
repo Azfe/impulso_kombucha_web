@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Chimfly';
+  src: url('../fonts/Chimfly.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --frutos-rojos: #E23A4D;
+  --pina-colada: #00B7E6;
+  --te-verde: #50C878;
+  --texto: #1A3E2B;
+  --limon: #FFE32B;
+  --background-color: #FFF3E6;
+  --gradient-pinaColada: linear-gradient(#b9f1f8, #fff5c3);
+  --gradient-frutosRojos: linear-gradient(#ffacc8, #ffe3e3);
+  --gradient-jengibre: linear-gradient(#fff966, #fceabb);
+  --gradient-teVerde: linear-gradient(#78ffb1, #c0fdd5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lunchtype21', sans-serif;
+  font-size: large;
+  margin: 0;
+  background-color: #FFF3E6;
+}
+
+/* MAIN CONTENT */
+
+.tres-columnas {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1.5rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+.columna-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.contenedor {
+  background-color: #fcf7c7;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.ciencia {
+  background-color: #f7d1f0;
+  border-radius: 15px;
+  margin: 3rem;
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.final {
+  font-size: 18px;
+  color: #599ba4;
+}
+
+@media (max-width: 768px) {
+  .tres-columnas {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .ciencia,
+  .contenedor {
+    margin: 1rem;
+  }
+}
